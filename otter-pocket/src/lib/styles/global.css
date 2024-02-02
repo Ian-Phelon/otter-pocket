@@ -1,28 +1,41 @@
-#sveltekit-entry {
+#data-sveltekit-preload-data {
 	min-height: 99.7vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	text-align: center;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
-body {
+/* body {
 	font-family: var(--font-body);
 	font-size: var(--font-300);
 	background: linear-gradient(180deg,
 			var(--primary) 0%,
 			var(--secondary) 40.45%);
 
-}
+} */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-heading);
 }
 
-h1.fancy, h2.fancy, h3.fancy, h4.fancy, h5.fancy, h6.fancy, p.fancy, button.fancy {
-	font-family: var(--font-heading-fancy);
+h1.fancy,
+h2.fancy,
+h3.fancy,
+h4.fancy,
+h5.fancy,
+h6.fancy,
+p.fancy,
+button.fancy {
+	font-family: var(--font-fancy);
 }
 
 h1 {

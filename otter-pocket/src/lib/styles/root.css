@@ -1,3 +1,4 @@
+/* --font-header */
 @font-face {
 	/* font-family: 'Montserrat', sans-serif; */
 	font-family: Montserrat;
@@ -5,6 +6,7 @@
 	font-display: swap;
 }
 
+/* --font-body */
 @font-face {
 	/* font-family: 'Source Sans Pro', sans-serif; */
 	font-family: Source Sans Pro;
@@ -13,6 +15,7 @@
 	font-weight: 600;
 }
 
+/* --font-fancy */
 @font-face {
 	/* font-family: 'Xanh Mono', monospace; */
 	font-family: Xanh Mono;
@@ -24,34 +27,22 @@
 
 
 	/************COLOR***************/
-	--primary: rgba(162, 22, 69, 1);
-	--primary-fade: rgb(255, 224, 235);
-	--secondary: rgba(33, 33, 69, 1);
-	--secondary-fade: rgb(213, 213, 255);
-	--tertiary: rgba(46, 108, 15, 1);
-	--neutral: rgba(255, 238, 223, 1);
-	--neutral-alt: rgba(247, 245, 255, 1);
-	--funtime: rgba(255, 9, 173, 1);
-	--warning: rgba(255, 62, 0, 1);
-	--outline-gradient: linear-gradient(140deg,
-			var(--primary) 0%,
-			var(--secondary) 20.45%);
-
+	/* TODO */
+	--one: rgb(107, 128, 219, 1.0);
+	--two: rgba(87, 226, 229, 1.0);
+	--three: rgba(69, 203, 133, 1.0);
+	--four: rgba(243, 116, 174, 1.0);
+	--five: rgba(21, 49, 49, 1.0);
 	/************UI-COLOR***************/
+	/* Ian: this section was here because we were stuck in the paradigm of Material Design. Does it really make sense to be here, instead of collocated with the rest of the element styling? */
 
-	--surface: var(--neutral);
-	--surface-alt: var(--neutral-alt);
-	--chip: var(--secondary);
-	--chip-alt: var(--tertiary);
-	--on-chip: var(--neutral);
-	--on-chip-alt: var(--neutral-alt);
-	--on-surface: var(--secondary);
-	--proceed: var(--primary);
-	--on-proceed: white;
 
 	/************FONTS***************/
-	/* TODO:  more appropriate falls than system defaults */
-	--font-heading-fancy: 'Xanh Mono', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	/* CHATGPT: When creating CSS variables for font names,
+		it's good practice to choose names that are descriptive and easy to understand. Here are some suggestions for CSS variable names related to font choices for headers and paragraphs:
+	
+		--header-font-family --header-font-size --header-font-weight --header-line-height --paragraph-font-family --paragraph-font-size --paragraph-font-weight --paragraph-line-height */
+	--font-fancy: 'Xanh Mono', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-heading: 'Source Sans Pro', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -130,7 +121,4 @@
 	--link-transition: border-bottom 0.15s ease-out;
 	--menu-transition: scale 0.2s ease-out;
 
-	/* these are in starter */
-	/* --column-width: 42rem;
-	--column-margin-top: 4rem; */
 }
